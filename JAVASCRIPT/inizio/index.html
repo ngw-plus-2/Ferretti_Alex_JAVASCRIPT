@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <!--scrivere il tag script nell'head-->
+        <script>
+            console.log("Hello World");
+        </script>
+    </head>
+    <body>
+        <header></header>
+        <main><h1>JAVASCRIPT</h1></main>
+        <footer></footer>
+        <!--va inserito prima della chiusura del body-->
+        <!--scrivere il tag nel body-->
+            <script>
+                //commento
+                console.log("Hello World");
+                //VARIABILI
+                //'TIPO SEMPLICE'
+                //interi(int)
+                //numeri con virgola (float)
+                //caratteri (char)
+                //parole/frasi(stringhe) 'PARTICOLARI'
+                //booleani: true/false (boolboolean)
+                let eta = 19;
+                let nome = 'alex';
+                let cognome = 'ferretti';
+                let isVivo = true;
+                let genere = 'm';
+                let altezza = 1.84;
+                //casting obbligato: tecnica di trasferimento di tipo dato
+                let numero = '10'
+                console.log(numero);
+                let numero_2 = Number(numero); //10 è numero
+                console.log(numero_2);
+
+                console.log(eta);
+                console.log(nome);
+                console.log(cognome);
+                console.log(isVivo);
+                console.log(genere);
+                console.log(altezza);
+                //cambio variabile
+                console.log(eta);
+                eta = 30;
+                console.log(eta);
+
+                //CONST ->dischiarazione
+                const  etaAlex = 20
+
+                //TIPI DERIVATI: 
+                //LISTA-> insieme di valori multitipo dentro parentesi quadre
+                let lista = [7, 9, "alex", true, "m"];
+                // 7 -> lista[0]
+                // 9 -> lista[1]
+                // 'alex' -> lista[2]
+                console.log(lista);
+                console.log(lista[0]);
+                console.log(lista[1]);
+                console.log(lista[2]);
+                console.log(lista[3]);
+                console.log(lista[4]);
+
+                //DIZIONARIO
+                //serie di valori muilti tipo
+                let clienti = {
+                    nome:"alex",
+                    cognome: "ferretti",
+                    eta: 19,
+                    isVivo: true,
+                };
+                console.log(clienti);
+
+                //valore a caso?
+                //UNDEFINED non intenzionale
+                let abc;
+                console.log(abc);
+                //NULL intenzionale
+                let ciao = null;
+                console.log(ciao);
+
+                //STRINGHE
+                let stringaUno = "abc"
+                let stringaDue = "Alex"
+                let stringaTre = "alex ferretti"
+                console.log(stringaUno);
+                console.log(stringaDue);
+                console.log(stringaTre);
+                //maiuscolo
+                console.log(stringaDue.toLocaleUpperCase());
+                //minuscolo
+                console.log(stringaDue.toLowerCase());
+                //numero caratteri, vengono contati anche gli spazi
+                console.log(stringaDue.length);
+
+                //CONDIZIONI (BLOCCHI IF)
+                let a = 9;
+                let b = 4;
+                if (a > b){
+                    console.log('a è più grande di b');
+                }
+                //false
+                if (a < b){
+                    console.log('a è piccolo di b');
+                } else {
+                    console.log("sono entrato nell'else");
+                }
+
+                //IF-ESLE IF
+                if(b < 5) {
+                    console.log("b minore di 5");
+                } else if (b < 4) {
+                    console.log("b minore di 4");
+                } else {
+                    console.log("errore");
+                }
+
+                //OPERATORI LOGICI
+                //AND (&&) OR (||) NOT  
+                let z = 5
+                let x = 4
+                //AND entra dentro il blocco di istruzione se sono ambo true
+                if (z > 4 && x < 5){
+                    console.log("zx");
+                }
+
+                //OR entra dentro il blocco di istruzione se almeno uno è true
+                if (z > 4 || x < 1){
+                    console.log("OR");
+                }
+
+                //NOT se messo il punto esclamativo nella parentesi dell'IF, il suo valore cambia (!true=false)
+                let isAlive = false;
+                if (isAlive) {
+                    console.log("NOT");
+                }
+
+                //SWITCH blocco di condizione 
+                let operazione = '+'
+                switch(operazione) {
+                    case '+' : 
+                        console.log("più");
+                        break;
+                    case '-' : 
+                        console.log("meno");
+                        break;
+                    case '*' : 
+                        console.log("per");
+                        break;
+                    case '/' : 
+                        console.log("diviso");
+                        break;
+                    default:
+                        console.log("error");
+                }
+
+                //CICLI FOR (1variabile interativa; 2condizione; 3istruzioni; 4incremento)
+                console.clear();
+                for (let topogigio = 0; topogigio < 10; topogigio++){
+                //`per usarla ALT+96` noi possiamo unire stringhe e variabili
+                    console.log(`colonna: ${topogigio}`);
+                }
+
+                //CICLI WHILE si conosce l'inizio ma non quando finisce
+                //si usa per i booleani
+                //let risposta = null;
+                //while (true) {
+                  //  console.log(risposta);
+                  //  risposta = prompt("inserisci exit per uscire");
+                  //  if (risposta == "exit"){
+                  //      break;
+                // }
+
+                //come fare le liste col ciclo for
+                let listaNomi = ["alex", "alessia", "andrea", "marco", "tony"];
+                console.log(listaNomi);
+
+                for (let j = 0; j <= listaNomi.length; j++) {
+                    console.log(listaNomi[j]);
+                }
+
+                //LISTA PUSH
+                let citta =["roma","firenze", "milano"];
+                citta.push("palermo");
+                console.log(citta);
+
+                //LISTA POP
+                let paesi =["mentana","monterotondo", "santalucia"];
+                paesi.pop("santalucia");
+                console.log(paesi);
+
+                
+
+
+
+            </script>
+    </body>
+</html>
